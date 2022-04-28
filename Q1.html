@@ -5,7 +5,7 @@
     <meta name="viewport" content-"width=device-width, initial-scale=1.0">
     <title> Question Page </title>
     <link rel="stylesheet" href="Q1_style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     
 </head>
 
@@ -15,6 +15,8 @@
         <div id="results">
         <h2> You scored: Not yet attempted</h2>
         </div>
+        
+          
     </header>
     <div class="container">
      <main> 
@@ -61,21 +63,31 @@
             </div>
 
             <button type="submit"> Submit Quiz</button>
-        </form>                                     
+            
+        </form> 
+       
+                                           
      </main>
+
+     
     
      <nav>
-        <h3>Right </h3>
+        <h3> </h3>
+        <button id="counterAddButton"> Start Quiz</button> 
+         
+
+
      </nav>
 
      <aside>
-        <h3>Left</h3>
-        <div class="timer">
-           <div class="time_test"> Time Left</div>
-           <div class="timer_sec">15</div>
-         </div>
+        <h3></h3>
+        <div id="time" class="timer">
+            <div class="time_test"> Time Left</div>
+            <span  id="counter" >15</span>
+          </div>
      </aside>
     </div>
+   
     
     <footer> 
         <h3> First Quiz Done by A.Kisling Jr. </h3>
@@ -85,4 +97,5 @@
     
 
 </body>
+<script src="script.js"defer></script>
 </html> 

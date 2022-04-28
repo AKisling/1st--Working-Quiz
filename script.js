@@ -1,32 +1,44 @@
-const button0 = document.getElementById('button0');
-const timeCounter = document.querySelector(".timer .timer_sec");
 
 
  
+localStorage.setItem("correct", "score");
+localStorage.setItem("quest","numofQuest");
 
 
-let counter;
+ var startTime = 15;
+ var counter = startTime;
+ var myInterval;
+ const addButton = document.getElementById('counterAddButton');
+ const counterSpan = document.getElementById('counter')
+ const restartQuiz = document.getElementById ('restartQuiz')
 
-function onbutton0 () {
-
-    StartTimer(10);
-} 
-
-// // If Take Quiz is Clicked
-// button0.onclick = function ()
-// {
-//     StartTimer(10);
-// } 
-
-function StartTimer(time){
-    counter = setInterval(timer, 1000);
-        function timer (){
-            timeCounter.textContent = time;
-            time--;
-        }
+ function createAlert(){
+    alert("Your Time Up!")
 }
 
-// When submt is click //
+ const counterHandler = ()=>{
+     counter --;
+
+     if(counter <=0) {
+         createAlert();         
+         onSubmit( );         
+         clearInterval(myInterval)
+         counter = startTime;
+     }
+     counterSpan.innerText = counter;
+ }
+
+ addButton.addEventListener('click',()=>
+ {
+     
+    myInterval = setInterval(counterHandler,1000)
+    
+     
+ })
+
+
+
+// When submit is click //
 
 function onSubmit( ) {
     var score=0;
@@ -50,14 +62,23 @@ function onSubmit( ) {
             score++;
         }
     }
-
+    
+    window.location.href = "Resutls.html";
     var results = document.getElementById('results');
-    results.innerHTML=`<h2> You Scored ${score} point out of ${numofQuest}</h2>`
+    results.innerHTML=`<h2> You Scored ${score} point out of ${numofQuest}</h2>`  
     alert(`You Scored ${score} out of ${numofQuest}`);
-    return false;
+
+    
+ 
+    return false;  
 
 
     
 }   
+
+var zscore = localStorage.getItem ("correct");
+var znumofQuest = localStorage.getItem("quest");
+var results_page = document.getElementById('results_page');
+results_page.innerHTML=`<h2> You Scored ${zscore} point out of ${znumofQuest}</h2>`
 
 

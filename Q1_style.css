@@ -14,6 +14,7 @@ body{
 .container {
     display: flex;
     flex: 1;
+    background-image: url(.img/lhouse.jpg);
 }
     
 header {
@@ -36,12 +37,7 @@ p{
 }
     
 main {
-        /*
-        border-style: solid;
-        border: 3 3 3 3;
-        border-radius: 10px;
-                */
-                
+              
         flex:1;
         padding:20px 20px;
         text-align: center;       
@@ -54,6 +50,8 @@ ol{
 
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
+  padding: 50px;
+
 }
 
 .questbox{
@@ -61,9 +59,6 @@ ol{
         border-style: solid;
         border: 3 3 3 3;
         border-radius: 10px;
-        /*margin-left:5px;
-        margin-right: 5px;
-        margin-top: 5px;*/
         margin: 10px;
         padding-bottom: 5px; 
         font-size: 20px;
@@ -84,6 +79,7 @@ nav{
         padding: 0 10px;
         order: -1;
         background-image:linear-gradient(#d32518,#858a90,#081b9c);
+        
 }
 
 aside{
@@ -98,6 +94,7 @@ aside{
 
 footer {
         text-align: center;
+        font-size: 18px;
         padding: 0.3em 0;
         background-image:linear-gradient(#081b9c,#ecd7d7);
 }
@@ -170,12 +167,12 @@ footer {
 }
 .time_test{
         font-weight: 400;
-        font-size: 17px;
+        font-size: 20px;
         user-select: none;
 }
 
 .timer_sec{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         background: #334a40;
         height: 30px;
