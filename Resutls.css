@@ -40,7 +40,7 @@ main {
         border-style: solid;
         border-radius: 10px;
         border: 1px;
-        background-image: url(.img/Cahalpech.jpg);
+        background-image:linear-gradient(#f1f1f1,#0b8566,rgb(123, 116, 232));
         background-position: center;
         background-size: inherit;
        
