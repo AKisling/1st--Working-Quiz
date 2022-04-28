@@ -40,7 +40,7 @@ main {
         border-style: solid;
         border-radius: 10px;
         border: 1px;
-        background-image:linear-gradient(#f1f1f1,#0b8566,rgb(123, 116, 232));
+        background-image:linear-gradient(#f1f1f1,#0b8566,#5f56e1);
         background-position: center;
         background-size: inherit;
        
@@ -97,7 +97,4 @@ footer{
     padding: 0.3em 0;
     background-image:linear-gradient(#f1f1f1,#0b8566);
 
-}
-p{
-    text-size-a;
 }
